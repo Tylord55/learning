@@ -61,6 +61,9 @@ def start_game():
             else:
                 print("Player {} has won!".format(player2))
             break
+        #print("Turn:", turns)
+        if turns == 9:
+            print("Game ended in a tie.")
     play_again = input("Press Y to play again:")
     if play_again == "Y" or play_again == "y":
         reset_board()
